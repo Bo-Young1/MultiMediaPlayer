@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coship.multimediaplayer.custom.SquareLayout
+    android:id="@+id/squarelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector">
+<ImageView
+    android:id="@+id/thunbnailitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="centerCrop"
+    android:src="@drawable/empty_photo"
+    android:layout_centerInParent="true"/>
+</com.coship.multimediaplayer.custom.SquareLayout>
+

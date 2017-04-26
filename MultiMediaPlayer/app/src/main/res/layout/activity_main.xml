@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/transparent">
+
+        <Button
+            android:id="@+id/btnPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginRight="60dp"
+            android:nextFocusRight="@+id/btnMusic"
+            android:background="@drawable/main_selector"
+            android:textColor="@color/snow"/>
+
+        <Button
+            android:id="@+id/btnMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:nextFocusLeft="@+id/btnPicture"
+            android:nextFocusRight="@+id/btnVideo"
+            android:background="@drawable/main_selector"
+            android:textColor="@color/snow"
+            android:text="音乐"/>
+
+        <Button
+            android:id="@+id/btnVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:nextFocusLeft="@+id/btnMusic"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/main_selector"
+            android:textColor="@color/snow"
+            android:text="视频"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</LinearLayout>
